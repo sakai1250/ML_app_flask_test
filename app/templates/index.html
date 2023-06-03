@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>画像アップロード</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+</head>
+<body>
+    <div>
+    <h1>画像アップロード</h1>
+    {%if base64_data_home%}
+    <div class="image-container">
+    <img src="data:image/jpeg;base64,{{ base64_data_home }}" alt="Image">
+    </div>
+    {% else %}
+        <p></p>
+    {%endif%}
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="アップロード">
+    </form>
+    </div>
+    <div>
+    {% block main %}{% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+{% block main %} 
+<main>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+  <div>
+    <div class="image-container">
+      <img src="data:image/jpeg;base64,{{ base64_data }}" alt="Image">
+    </div>
+    <p>{{ result }}</p>
+
+  </div>
+</main> 
+{% endblock %}
