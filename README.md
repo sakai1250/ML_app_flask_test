@@ -1,5 +1,8 @@
 # ML_app_flask_test
-https://github.com/sakai1250/ML_app_flask_test/assets/92532910/1be15b1e-99e3-47f7-90ce-6099047c9707
+
+
+
+https://github.com/sakai1250/ML_app_flask_test/assets/92532910/71bd5135-1a9f-489b-8813-9a76cfb9de19
 
 
 ```bash:(terminal)
